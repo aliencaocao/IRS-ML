@@ -24,7 +24,7 @@ class LinearModel:  # initializing to 1 now, but also can do 0 or random
         self.Bias = tf.Variable(1.0)
 
 
-def loss(y, pred):  # Mean Squared Error
+def loss(y, pred):  # Mean Squared Error with L2 Normalisation
     return tf.reduce_mean(tf.square(y - pred)) + tf.reduce_sum(regTerm * tf.square(linear_model.Weight))
 
 
