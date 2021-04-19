@@ -1,5 +1,4 @@
 import tensorflow as tf
-import random
 
 def gen(n):
     theta = (2, 3)
