@@ -81,7 +81,7 @@ metrics = ['accuracy']
 # ]
 model.compile(optimizer=opt, loss=loss, metrics=metrics)
 model.summary()
-plot_model(model, show_shapes=True, show_layer_names=True, to_file='model.png')
+# plot_model(model, show_shapes=True, show_layer_names=True, to_file='model.png')
 
 # Training
 start_time = time.time()
